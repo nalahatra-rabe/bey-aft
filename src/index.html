@@ -14,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Importing Montserrat font family from Google Fonts -->
+    <!-- Importing  font family from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet">
 
     <!-- FontAwesome for icons (user, search, etc.) -->
@@ -104,7 +106,7 @@
 
     <!-- Inner box card -->
     <div class="w-full bg-white px-[68px] py-[54px] max-w-[679px] rounded-[32px] flex flex-col justify-center items-center gap-4 shadow-custom">
-        
+
         <h1 class="text-center text-black font-bold text-[32px] leading-[38.73px]">
             Le premier réseau communautaire gratuit de annonces
         </h1>
@@ -117,6 +119,37 @@
     </div>
 </div>
 
+<!-- sliced paper shape -->
+<img src="assets/images/shape.svg" alt="shape vector" class="w-full h-auto object-cover">
+
+<!-- Add post section -->
+<section
+        class="w-full container-fluid max-md:container min-h-[533px] px-8 m-auto max-w-[1646px] flex justify-start relative flex-col items-center -translate-y-[340px] gap-[136px]">
+
+    <!-- Introductory text paragraph for add post section -->
+    <p class="max-w-[1002px] text-black font-normal text-[20px] leading-[24.38px]">
+        Rejoignez la première plateforme gratuite dédiée aux annonces. Particuliers et professionnels se rassemblent
+        pour partager, inspirer et découvrir des annonces remarquables dans divers domaines.
+    </p>
+
+    <!-- Call-to-action box  -->
+    <div class="w-full py-[52px] bg-light-green max-w-[1306px] rounded-[32px] flex justify-center items-center gap-[32px]">
+        <span class="font-bold font-inter text-[20px] text-black">C’est le moment de publier</span>
+
+        <!-- call-to-action button [add new post] -->
+        <button type="button" aria-label="Ajouter une annonce"
+                class="w-full max-w-[372px] px-10 h-[60px] bg-green text-white font-bold rounded-2xl transition-all duration-300 hover:brightness-110 leading-[24.38px] active:scale-95">
+            Ajouter une annonce
+        </button>
+    </div>
+
+    <!-- Decorative flower shape  for visual design -->
+    <img src="assets/images/green-flower-shape.svg" alt="flower shape"
+         class="absolute top-0 left-0 w-[244px] h-[109.6px] object-contain">
+    <img src="assets/images/red-flower-shape.svg" alt="flower shape"
+         class="absolute bottom-0 right-0 w-[173px] h-[117.5px] object-contain">
+
+</section>
 
 </body>
 </html>
