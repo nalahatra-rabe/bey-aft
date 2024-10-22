@@ -1,34 +1,104 @@
 <!doctype html>
 <html lang="fr">
 <head>
+    <!-- Meta tags for proper rendering and touch zooming -->
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
     <title>Beyaft | Before and After</title>
+
+    <!-- Preconnecting to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importing Montserrat font family from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
+
+    <!-- FontAwesome for icons (user, search, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Main stylesheet for the project -->
     <link rel="stylesheet" href="assets/css/build.css">
 </head>
 <body>
-<!-- header content -->
+
+<!-- Header Section -->
 <header>
-    <div class="w-full bg-white container-fluid max-md:container px-8 m-auto max-w-[1680px] p-8 flex flex-row gap-[75px]">
-        <img src="assets/images/logo.svg" alt="before after brand logo" class="w-[96.71px] h-[61.47px]">
-        <!--        search bar with call to action button -->
-        <div class="flex flex-row justify-center items-center gap-4">
-            <button type="button" aria-label="Publier une annonce"
-                    class="px-10 py-4 bg-green text-white font-bold rounded-2xl transition-all duration-300 hover:brightness-110">
-                Publier une
-                annonce
-            </button>
-            <form>
-                <input type="text" placeholder="Rechercher des annonce" class="font-normal text-black ">
-            </form>
+    <div class="w-full bg-white container-fluid max-md:container px-8 m-auto max-w-[1680px] p-8 flex justify-between items-center">
+        <!-- Logo and search bar container -->
+        <div class="flex flex-row gap-[75px] w-full">
+            <!-- Brand logo -->
+            <img src="assets/images/logo.svg" alt="Before After brand logo" class="w-[96.71px] h-[61.47px]">
+
+            <!-- Search bar and publish button -->
+            <div class="w-full flex flex-row justify-start items-center gap-4">
+
+                <!-- Button to publish an ad -->
+                <button type="button" aria-label="Publier une annonce"
+                        class="px-10 h-[60px] bg-green text-white font-bold rounded-2xl transition-all duration-300 hover:brightness-110 leading-[24.38px] whitespace-nowrap active:scale-95">
+                    Publier une annonce
+                </button>
+
+                <!-- Search bar form -->
+                <form class="w-full relative max-w-[670px]">
+                    <input type="search" placeholder="Rechercher des annonces"
+                           class="font-normal text-black placeholder:text-black placeholder:font-normal border border-soft-grey rounded-2xl px-[24px] h-[60px] outline-none focus:border-green transition-all duration-300 w-full ">
+
+                    <!-- Submit button inside the search bar -->
+                    <button type="submit"
+                            class="w-[42px] h-[42px] bg-green flex justify-center items-center rounded-[12px] absolute right-[10px] top-[9px] text-white">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
         </div>
+
+        <!-- User account button -->
+        <button class="w-[62px] h-[62px] flex justify-center items-center rounded-2xl bg-white-smoke transition-all duration-200 active:scale-95 hover:bg-black hover:text-white text-black">
+            <i class="fa fa-user text-[20px]"></i>
+        </button>
     </div>
+    <!-- Navigation Bar -->
+    <nav class="w-full py-8 bg-white-smoke shadow-custom">
+        <div class="flex flex-row gap-8 justify-start items-center container-fluid max-md:container px-8 m-auto max-w-[1680px]">
+
+            <!-- Fitness Category -->
+            <a href="#" class="text-black leading-[19.5px]">Fitness</a>
+            <i class="fa fa-circle text-[8px] text-[#767575]"></i>
+
+            <!-- Lifestyle and Well-being Category -->
+            <a href="#" class="text-black leading-[19.5px]">Lifestyle et bien-être</a>
+            <i class="fa fa-circle text-[8px] text-[#767575]"></i>
+
+            <!-- Decoration Category -->
+            <a href="#" class="text-black leading-[19.5px]">Décoration</a>
+            <i class="fa fa-circle text-[8px] text-[#767575]"></i>
+
+            <!-- Cosmetics Category -->
+            <a href="#" class="text-black leading-[19.5px]">Cosmétiques</a>
+            <i class="fa fa-circle text-[8px] text-[#767575]"></i>
+
+            <!-- Automotive Category -->
+            <a href="#" class="text-black leading-[19.5px]">Automobile</a>
+            <i class="fa fa-circle text-[8px] text-[#767575]"></i>
+
+            <!-- Pets Category -->
+            <a href="#" class="text-black leading-[19.5px]">Animaux de compagnie</a>
+            <i class="fa fa-circle text-[8px] text-[#767575]"></i>
+
+            <!-- Professionals Category -->
+            <a href="#" class="text-black leading-[19.5px]">Professionnels</a>
+            <i class="fa fa-circle text-[8px] text-[#767575]"></i>
+        </div>
+    </nav>
+
 </header>
+
 </body>
 </html>
