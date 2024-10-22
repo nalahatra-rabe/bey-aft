@@ -16,6 +16,8 @@ module.exports = {
       grey: "#D9D9D9",
       black: "#000000",
       "soft-grey": "#A6A3A3",
+      "light-grey": "#F2F2F2",
+      gradian: "linear-gradient(156.6deg, #EF7A64 -8.29%, #FAC16F 101.3%)",
     },
     extend: {
       boxShadow: {
